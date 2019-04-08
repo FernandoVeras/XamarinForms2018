@@ -25,11 +25,19 @@ namespace App01_ConsultaCEP
 
         private void BuscarCep(object sender, EventArgs e)
         {
-            var cep = txtCep.Text.Trim();
+            var cep = txtCep.Text;
+            if (string.IsNullOrEmpty(cep) || !int.TryParse(cep, out int result) || (cep.Length <= 0 || cep.Length > 8))
+            {
+                DisplayAlert("Erro!", "Informe um CEP válido!", "OK");
+            }
+            else
+            {
+                cep.Trim();
 
-            var endereco = ViaCEPServico.BuscarEnderecoViaCEP(cep);
+                var endereco = ViaCEPServico.BuscarEnderecoViaCEP(cep);
 
-            lbResultado.Text = string.Format("Endereço é: {0},{1},{2}", endereco.logradouro, endereco.bairro, endereco.localidade);
+                lbResultado.Text = string.Format("Endereço é: {0},{1},{2}", endereco.logradouro, endereco.bairro, endereco.localidade);
+            }
         }
     }
 }
