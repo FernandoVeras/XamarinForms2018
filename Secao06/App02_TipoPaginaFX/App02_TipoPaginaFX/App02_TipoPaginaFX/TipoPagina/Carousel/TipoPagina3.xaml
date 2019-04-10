@@ -9,6 +9,7 @@
                    TextColor="CornflowerBlue"
                 HorizontalOptions="CenterAndExpand" />
             <Button x:Name="btnClicar" Image="play.png" BackgroundColor="Transparent" HorizontalOptions="Center"/>
+            <Button x:Name="btnAbrirMasterDetail" Image="xamarin.png" BackgroundColor="IndianRed" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

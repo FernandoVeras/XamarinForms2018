@@ -18,14 +18,14 @@ namespace App02_TipoPaginaFX.TipoPagina.Carousel
             InitializeComponent();
 
             btnClicar.Clicked += MudarPagina;
+            btnAbrirMasterDetail.Clicked += (sender, e) => { App.Current.MainPage = new Master.Maaster(); };
         }
 
         public void MudarPagina(object sender, EventArgs e)
         {
             // colcoar dentro da navigation page pra poder ter o controle de ir e voltar entre as páginas
             //App.Current.MainPage = new NavigationPage(new Pagina1());
-            //App.Current.MainPage = new Tabbed.Abas();
-            App.Current.MainPage = new NavigationPage(new Tabbed.Abas());
+            App.Current.MainPage = new Tabbed.Abas();
         }
     }
 }

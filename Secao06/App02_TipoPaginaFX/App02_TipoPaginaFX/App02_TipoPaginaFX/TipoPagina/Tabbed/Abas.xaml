@@ -4,6 +4,6 @@
             xmlns:nav="clr-namespace:App02_TipoPaginaFX.TipoPagina.Naviagation"
              x:Class="App02_TipoPaginaFX.TipoPagina.Tabbed.Abas">
 
-    <nav:Pagina1/>
-    <nav:Pagina2/>
+    <!--<nav:Pagina1/>
+    <nav:Pagina2/>-->
 </TabbedPage>

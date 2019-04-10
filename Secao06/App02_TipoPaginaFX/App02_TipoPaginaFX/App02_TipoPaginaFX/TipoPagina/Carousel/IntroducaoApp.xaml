@@ -4,7 +4,7 @@
              xmlns:page="clr-namespace:App02_TipoPaginaFX.TipoPagina.Carousel"
              x:Class="App02_TipoPaginaFX.TipoPagina.Carousel.IntroducaoApp">
 
-    <page:TipoPagina1/>
+    <!--<page:TipoPagina1/>
     <page:TipoPagina2/>
-    <page:TipoPagina3/>
+    <page:TipoPagina3/>-->
 </CarouselPage>

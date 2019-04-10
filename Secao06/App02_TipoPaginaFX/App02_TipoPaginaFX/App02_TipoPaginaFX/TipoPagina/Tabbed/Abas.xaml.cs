@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App02_TipoPaginaFX.TipoPagina.Naviagation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,12 +17,13 @@ namespace App02_TipoPaginaFX.TipoPagina.Tabbed
         {
             InitializeComponent();
 
-            this.SetTitle();
+            this.DoSomething();
         }
 
-        private void SetTitle()
+        private void DoSomething()
         {
-            Title = ToolbarItems.Where(x => x.IsEnabled).Select(w => w.Text).FirstOrDefault();
+            Children.Add(new NavigationPage(new Pagina1()) { Title = "Teste Fernando1" });
+            Children.Add(new NavigationPage(new Pagina2()) { Title = "Teste Fernando2" });
         }
     }
 }

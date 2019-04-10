@@ -11,8 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="TipoPagina\Master\NewFolder\**" />
     <Compile Remove="TipoPagina\Tabbed\NewFolder\**" />
+    <EmbeddedResource Remove="TipoPagina\Master\NewFolder\**" />
     <EmbeddedResource Remove="TipoPagina\Tabbed\NewFolder\**" />
+    <None Remove="TipoPagina\Master\NewFolder\**" />
     <None Remove="TipoPagina\Tabbed\NewFolder\**" />
   </ItemGroup>
 
@@ -36,6 +39,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TipoPagina\Carousel\TipoPagina3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TipoPagina\Master\Conteudo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TipoPagina\Master\Maaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TipoPagina\Naviagation\Modal.xaml">

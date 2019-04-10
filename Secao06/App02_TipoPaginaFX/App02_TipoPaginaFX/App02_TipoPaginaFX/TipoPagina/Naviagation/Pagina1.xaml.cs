@@ -18,19 +18,9 @@ namespace App02_TipoPaginaFX.TipoPagina.Naviagation
 
             Title = "Pagina 1";
 
-            btnPage2.Clicked += MudarPagina2;
-            btnChamarModal.Clicked += ChamarModal;
-        }
+            btnPage2.Clicked += (sender, e) => { Navigation.PushAsync(new Pagina2(), true); };
 
-        public void MudarPagina2(object sender, EventArgs e)
-        {
-            // para ter fluxo de ida e volta nas páginas
-            Navigation.PushAsync(new Pagina2(), true);
-        }
-
-        public void ChamarModal(object sender, EventArgs e)
-        {
-            Navigation.PushModalAsync(new Modal());
+            btnChamarModal.Clicked += (sender, e) => { Navigation.PushModalAsync(new Modal()); };
         }
     }
 }

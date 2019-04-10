@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:master="clr-namespace:App02_TipoPaginaFX.TipoPagina.Master"
+             x:Class="App02_TipoPaginaFX.TipoPagina.Master.Maaster">
+
+    <MasterDetailPage.Master>
+        <!--Há vantagens usar o master detail dentro do xaml - aqui no caso-->
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="Pagina 1" BackgroundColor="Transparent" x:Name="btnPagina1"/>
+                <Button Text="Pagina 2" BackgroundColor="Transparent" x:Name="btnPagina2"/>
+                <Button Text="Conteudo" BackgroundColor="Transparent" x:Name="btnPagina3"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <master:Conteudo />
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
